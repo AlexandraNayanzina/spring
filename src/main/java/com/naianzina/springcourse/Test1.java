@@ -2,12 +2,13 @@ package com.naianzina.springcourse;
 
 public class Test1 {
 
-    public static void main(String [] args){
-        Pet pet1 = new Dog();
-        Pet pet2 = new Cat();
-        pet1.say();
-        pet2.say();
 
+  public static void main(String [] args) {
+    Pet petDog = new Dog();
+    petDog.voice();
 
-    }
+    Pet petCat = new Cat();
+    petCat.voice();
+
+  }
 }
