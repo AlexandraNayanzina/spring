@@ -6,8 +6,23 @@ import org.springframework.stereotype.Component;
 
 @Component("bookBean")
 public class Book {
-@Value("Computer Science")
+
+@Value("Complete Guide to Test Automation")
   private String name;
+
+@Value("Amon Axelrod")
+private String author;
+
+@Value("1866")
+private int yearOfPublication;
+
+  public String getAuthor() {
+    return author;
+  }
+
+  public int getYearOfPublication() {
+    return yearOfPublication;
+  }
 
   public String getName() {
     return name;
